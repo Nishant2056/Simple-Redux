@@ -9,6 +9,7 @@ function App() {
   const dispatch = useDispatch();
 
   const handleAdd = () => {
+    if (!input.trim()) return;
     dispatch(addTask(input));
     setInput("");
   };

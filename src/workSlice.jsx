@@ -8,9 +8,7 @@ const workSlice = createSlice({
       state.tasks.push(action.payload);
     },
     removeTask: (state, action) => {
-      state.tasks = state.tasks.filter(
-        (task, index) => index !== action.payload
-      );
+      state.tasks = state.tasks.filter((index) => index !== action.payload);
     },
   },
 });
